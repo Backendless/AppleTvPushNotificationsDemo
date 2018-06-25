@@ -2,6 +2,10 @@ This project is a sample tvOS application demonstrating the usage of silent push
 
 #### Attention! This demo requires a real Apple TV device running tvOS 11.0 or higher and [certificate for push notifications (uploaded in Backendless console)](https://backendless.com/docs/ios/doc.html#push-notification-setup-ios)
 
+You can see a demo of this app in the following video.
+
+[![Backendless SDK for tvOS ](https://img.youtube.com/vi/B5iaEHNZWSU/0.jpg)](https://www.youtube.com/watch?time_continue=274&v=Iu_vGVTeGeI)
+
 Follow the instructions below to clone the repo and run the app on your device:
 ## How to Run the Project
 1. Open a Terminal window and run the following command
