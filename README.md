@@ -4,7 +4,7 @@ This project is a sample tvOS application demonstrating the usage of silent push
 
 You can see a demo of this app in the following video.
 
-[![Backendless SDK for tvOS ](https://img.youtube.com/vi/B5iaEHNZWSU/0.jpg)](https://www.youtube.com/watch?time_continue=274&v=Iu_vGVTeGeI)
+[![Backendless SDK for tvOS ](https://img.youtube.com/vi/B5iaEHNZWSU/0.jpg)](https://youtu.be/Iu_vGVTeGeI)
 
 Follow the instructions below to clone the repo and run the app on your device:
 ## How to Run the Project
