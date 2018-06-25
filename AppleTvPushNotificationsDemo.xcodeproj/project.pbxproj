@@ -20,6 +20,7 @@
 		5A15EF8820E0CDF0007EBD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A15EF8A20E0CDF1007EBD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A15EF8C20E0CDF1007EBD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A25221320E0E59E00BF7FFA /* AppleTvPushNotificationsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleTvPushNotificationsDemo.entitlements; sourceTree = "<group>"; };
 		5AEC5B0F20E0D21300534DE4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -54,6 +55,7 @@
 		5A15EF8220E0CDEF007EBD21 /* AppleTvPushNotificationsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5A25221320E0E59E00BF7FFA /* AppleTvPushNotificationsDemo.entitlements */,
 				5A15EF8320E0CDEF007EBD21 /* AppDelegate.swift */,
 				5A15EF8520E0CDF0007EBD21 /* ViewController.swift */,
 				5A15EF8720E0CDF0007EBD21 /* Main.storyboard */,
@@ -99,10 +101,21 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Backendless";
+				ORGANIZATIONNAME = Backendless;
 				TargetAttributes = {
 					5A15EF7F20E0CDEF007EBD21 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.appletvos = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -277,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AppleTvPushNotificationsDemo/AppleTvPushNotificationsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppleTvPushNotificationsDemo/Info.plist;
@@ -298,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AppleTvPushNotificationsDemo/AppleTvPushNotificationsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppleTvPushNotificationsDemo/Info.plist;
