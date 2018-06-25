@@ -22,4 +22,4 @@ Follow the instructions below to clone the repo and run the app on your device:
    ```
 4. Once all of the pods are downloaded / updated, an Xcode project workspace file is created. This is the file you use to work with your app.
 5. Open the AppleTvPushNotificationsDemo.xcworkspace file with Xcode
-6. Open the ViewController.swift file and change the `APP_ID` and `API_KEY` values to include yours from the Backendless Console Manage tab.
+6. Open the AppDelegate.swift file and change the `APP_ID` and `API_KEY` values to include yours from the Backendless Console Manage tab.
