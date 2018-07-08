@@ -17,9 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let center = UNUserNotificationCenter.current()
         center.delegate = self
         center.requestAuthorization(options: [.badge]) { (granted, error) in
-            DispatchQueue.main.async {
-                application.registerForRemoteNotifications()
-            }
+            application.registerForRemoteNotifications()
         }
         return true
     }
