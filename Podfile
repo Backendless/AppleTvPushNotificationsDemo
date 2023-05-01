@@ -1,5 +1,5 @@
 
 target 'AppleTvPushNotificationsDemo' do
   use_frameworks!
-  pod 'Backendless'
+  pod 'BackendlessSwift'
 end

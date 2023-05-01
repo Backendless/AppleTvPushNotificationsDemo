@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,11 @@
 		5A15EF8620E0CDF0007EBD21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A15EF8520E0CDF0007EBD21 /* ViewController.swift */; };
 		5A15EF8920E0CDF0007EBD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A15EF8720E0CDF0007EBD21 /* Main.storyboard */; };
 		5A15EF8B20E0CDF1007EBD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A15EF8A20E0CDF1007EBD21 /* Assets.xcassets */; };
+		F7CC51FA845125E4975D9D69 /* Pods_AppleTvPushNotificationsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0189178D5593EE0156752B02 /* Pods_AppleTvPushNotificationsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0189178D5593EE0156752B02 /* Pods_AppleTvPushNotificationsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleTvPushNotificationsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A15EF8020E0CDEF007EBD21 /* AppleTvPushNotificationsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTvPushNotificationsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A15EF8320E0CDEF007EBD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A15EF8520E0CDF0007EBD21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5A15EF8C20E0CDF1007EBD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A25221320E0E59E00BF7FFA /* AppleTvPushNotificationsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleTvPushNotificationsDemo.entitlements; sourceTree = "<group>"; };
 		5AEC5B0F20E0D21300534DE4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		BDE4CA5106D47FA83491604B /* Pods-AppleTvPushNotificationsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTvPushNotificationsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppleTvPushNotificationsDemo/Pods-AppleTvPushNotificationsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E4F98FD5E19776672453FEDB /* Pods-AppleTvPushNotificationsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTvPushNotificationsDemo.release.xcconfig"; path = "Target Support Files/Pods-AppleTvPushNotificationsDemo/Pods-AppleTvPushNotificationsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,18 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CC51FA845125E4975D9D69 /* Pods_AppleTvPushNotificationsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C833A77DBCC34289631D97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDE4CA5106D47FA83491604B /* Pods-AppleTvPushNotificationsDemo.debug.xcconfig */,
+				E4F98FD5E19776672453FEDB /* Pods-AppleTvPushNotificationsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5A15EF7720E0CDEF007EBD21 = {
 			isa = PBXGroup;
 			children = (
 				5A15EF8220E0CDEF007EBD21 /* AppleTvPushNotificationsDemo */,
 				5A15EF8120E0CDEF007EBD21 /* Products */,
 				C8A827CD8E0E12735B4D0249 /* Frameworks */,
+				28C833A77DBCC34289631D97 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5AEC5B0F20E0D21300534DE4 /* UserNotifications.framework */,
+				0189178D5593EE0156752B02 /* Pods_AppleTvPushNotificationsDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A15EF8F20E0CDF1007EBD21 /* Build configuration list for PBXNativeTarget "AppleTvPushNotificationsDemo" */;
 			buildPhases = (
+				5D13489B68DB8CC4857E9A84 /* [CP] Check Pods Manifest.lock */,
 				5A15EF7C20E0CDEF007EBD21 /* Sources */,
 				5A15EF7D20E0CDEF007EBD21 /* Frameworks */,
 				5A15EF7E20E0CDEF007EBD21 /* Resources */,
+				53C6D095A6E0A5FE1C04664D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,12 +117,14 @@
 		5A15EF7820E0CDEF007EBD21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Backendless;
 				TargetAttributes = {
 					5A15EF7F20E0CDEF007EBD21 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = "";
 						SystemCapabilities = {
 							com.apple.BackgroundModes.appletvos = {
 								enabled = 1;
@@ -148,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53C6D095A6E0A5FE1C04664D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTvPushNotificationsDemo/Pods-AppleTvPushNotificationsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTvPushNotificationsDemo/Pods-AppleTvPushNotificationsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleTvPushNotificationsDemo/Pods-AppleTvPushNotificationsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D13489B68DB8CC4857E9A84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppleTvPushNotificationsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A15EF7C20E0CDEF007EBD21 /* Sources */ = {
@@ -287,6 +349,7 @@
 		};
 		5A15EF9020E0CDF1007EBD21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE4CA5106D47FA83491604B /* Pods-AppleTvPushNotificationsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -300,15 +363,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.backendless.AppleTvPushNotificationsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/tvos/backendless/include/Backendless-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
 		5A15EF9120E0CDF1007EBD21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F98FD5E19776672453FEDB /* Pods-AppleTvPushNotificationsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -322,10 +388,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.backendless.AppleTvPushNotificationsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/tvos/backendless/include/Backendless-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
